@@ -4,40 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mail versturen</title>
+
   assets/style.css
+
   <!-- EmailJS -->
-  https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js</script>
-  <!-- Firebase -->
-  <script type="module">
-    // Firebase v10 (modular): we laden in app.js
-  </script>
+  https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js
 </head>
+
 <body>
-  <div class="container">
-    <h1>Mail versturen</h1>
-    <p>Vul je gegevens in. De mail wordt verzonden en opgeslagen in het dashboard.</p>
+  <div class="page">
+    <div class="card fade-in">
 
-    <div id="alert" class="alert" style="display:none;"></div>
+      <h1 class="title">📧 Mail versturen</h1>
+      <p class="subtitle">Stuur een bericht — het komt rechtstreeks in MatteoDesigns Dashboard.</p>
 
-    <form id="mailForm">
-      <label for="email">Jouw e‑mail</label>
-      <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
+      <div id="alert" class="alert" style="display:none;"></div>
 
-      <label for="subject">Onderwerp</label>
-      <input type="text" id="subject" name="subject" maxlength="200" placeholder="Onderwerp van je mail" required>
+      <form id="mailForm" class="form">
 
-      <label for="message">Bericht</label>
-      <textarea id="message" name="message" rows="7" placeholder="Schrijf hier je bericht..." required></textarea>
+        <div class="input-group">
+          <label>de e‑mail</label>
+          <input type="email" id="email" required placeholder="naam@voorbeeld.com">
+        </div>
 
-      <button type="submit">Verstuur mail</button>
-    </form>
+        <div class="input-group">
+          <label>Onderwerp</label>
+          <input type="text" id="subject" required placeholder="Onderwerp van je bericht">
+        </div>
 
-    <p style="margin-top:18px">
-      dashboard.htmlNaar dashboard</a>
-    </p>
+        <div class="input-group">
+          <label>Bericht</label>
+          <textarea id="message" rows="7" required placeholder="Typ je bericht..."></textarea>
+        </div>
+
+        <button class="btn-primary">Versturen</button>
+        <button class="btn-primary">Naar Dashboard</button>
+      </form>
+
+      <div class="footer-link">
+        <a href="dashboard.html">📊 Naar dashboard</a>
+      </div>
+
+    </div>
   </div>
 
-  assets/config.js</script>
+  <scriptscript>
   assets/app.js</script>
 </body>
+</html>
 </html>
