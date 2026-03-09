@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard – Berichten</title>
+  assets/style.css
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <h1>Dashboard – Berichten</h1>
+      <div id="topActions" style="display:none;">
+        mail.htmlFormulier</a>
+        <button id="btnLogout" class="btn">Uitloggen</button>
+      </div>
+    </div>
+
+    <div id="loginBox">
+      <h2>Inloggen</h2>
+      <div id="loginAlert" class="alert error" style="display:none;"></div>
+      <form id="loginForm">
+        <label>E‑mail</label>
+        <input type="email" id="loginEmail" required>
+        <label>Wachtwoord</label>
+        <input type="password" id="loginPass" required>
+        <button type="submit">Inloggen</button>
+      </form>
+      <p style="margin-top:8px;font-size:13px;color:#555;">
+        Tip: maak 1 admin-account in Firebase Authentication.
+      </p>
+    </div>
+
+    <div id="dashBox" style="display:none;">
+      <form id="searchForm" class="search">
+        <input type="text" id="q" placeholder="Zoek in e‑mail / onderwerp / bericht">
+        <select id="status">
+          <option value="">Alle status</option>
+          <option value="ok">Verzending OK</option>
+          <option value="err">Verzending fout</option>
+        </select>
+        <button type="submit">Zoeken</button>
+      </form>
+
+      <p id="countText">0 resultaten gevonden</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Van (e‑mail)</th>
+            <th>Onderwerp</th>
+            <th>Bericht</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  assets/config.js</script>
+  assets/dashboard.js</script>
+</body>
+</html>

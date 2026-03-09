@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mail versturen</title>
+  assets/style.css
+  <!-- EmailJS -->
+  https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js</script>
+  <!-- Firebase -->
+  <script type="module">
+    // Firebase v10 (modular): we laden in app.js
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Mail versturen</h1>
+    <p>Vul je gegevens in. De mail wordt verzonden en opgeslagen in het dashboard.</p>
+
+    <div id="alert" class="alert" style="display:none;"></div>
+
+    <form id="mailForm">
+      <label for="email">Jouw e‑mail</label>
+      <input type="email" id="email" name="email" placeholder="naam@voorbeeld.com" required>
+
+      <label for="subject">Onderwerp</label>
+      <input type="text" id="subject" name="subject" maxlength="200" placeholder="Onderwerp van je mail" required>
+
+      <label for="message">Bericht</label>
+      <textarea id="message" name="message" rows="7" placeholder="Schrijf hier je bericht..." required></textarea>
+
+      <button type="submit">Verstuur mail</button>
+    </form>
+
+    <p style="margin-top:18px">
+      dashboard.htmlNaar dashboard</a>
+    </p>
+  </div>
+
+  assets/config.js</script>
+  assets/app.js</script>
+</body>
+</html>
